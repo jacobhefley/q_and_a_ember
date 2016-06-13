@@ -18,7 +18,19 @@
     {{content-for "body"}}
 
     <script src="assets/vendor.js"></script>
-    <script src="assets/q-and-a.js"></script>
+    <script src="assets/q-and-a.js"></script>  
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCCDGzVhwq4yV1bxMkOzUdj_21p5AmvadI",
+        authDomain: "questions-and-answers-6409d.firebaseapp.com",
+        databaseURL: "https://questions-and-answers-6409d.firebaseio.com",
+        storageBucket: "questions-and-answers-6409d.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+
 
     {{content-for "body-footer"}}
   </body>
