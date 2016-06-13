@@ -3,8 +3,10 @@
   <p><small>by {{model.author}}</small></p>
   <hr>
   <p><small>Notes {{model.notes}}</small></p>
+  {{#each model.answers as |answer|}}
   <div class="alert alert-info" role="alert">
-    <p>xxx</p>
+    <p><small>{{answer.author}} says: {{answer.content}}</small></p>
   </div>
-  {{new-answer-tile}}
+  {{/each}}
+  {{new-answer-tile saveAnswer="saveAnswerToQuestion" question=model}}
 </div>
