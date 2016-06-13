@@ -1,16 +1,12 @@
 <div class="container">
   <form class="form-horizontal" role="form">
     <div class="form-group">
-      <label for="question_content">Question</label>
-      {{input value=content id="question_content" class="form-control"}}
+      <label for="answer_content">Question</label>
+      {{input value=content id="answer_content" class="form-control"}}
     </div>
     <div class="form-group">
       <label for="author">Author</label>
       {{input value=author id="author" class="form-control"}}
-    </div>
-    <div class="form-group">
-      <label for="notes">Notes</label>
-      {{input value=notes id="notes" class="form-control"}}
     </div>
     <button class="btn btn-success" {{action 'save'}}>Save</button>
   </form>

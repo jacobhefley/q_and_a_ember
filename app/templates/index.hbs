@@ -1,5 +1,10 @@
 <div class="container">
   {{#each model.questions as |question|}}
-    {{question-tile question=question}}
+    {{#link-to 'question' question.id}}
+    <div class="jumbotron">
+      <h2>{{question.content}}</h2>
+      <p><small>by {{question.author}}</small></p>
+    </div>
+    {{/link-to}}
   {{/each}}
 </div>
