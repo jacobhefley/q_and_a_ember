@@ -3,10 +3,10 @@
 module.exports = function(environment) {
   var ENV = {
     firebase: {
-     apiKey: 'AIzaSyCCDGzVhwq4yV1bxMkOzUdj_21p5AmvadI',
-     authDomain: 'questions-and-answers-6409d.firebaseapp.com',
-     databaseURL: 'https://questions-and-answers-6409d.firebaseio.com',
-     storageBucket: 'questions-and-answers-6409d.appspot.com',
+      apiKey: "AIzaSyCCDGzVhwq4yV1bxMkOzUdj_21p5AmvadI",
+      authDomain: "questions-and-answers-6409d.firebaseapp.com",
+      databaseURL: "https://questions-and-answers-6409d.firebaseio.com",
+      storageBucket: "questions-and-answers-6409d.appspot.com",
    },
     modulePrefix: 'q-and-a',
     environment: environment,
